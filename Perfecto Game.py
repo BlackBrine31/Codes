@@ -46,11 +46,11 @@ def show_variable(value):
 # Show the initial score
 show_variable(score)
 
-# Example: Update score after 2 seconds
+# Example: Update score after 0.1 seconds
 def update_score():
     global score
     show_variable(score)
-    win.ontimer(update_score, 500)  # Update every 0.5 seconds
+    win.ontimer(update_score, 100)  # Update every 0.1 seconds
 
 # Start updating the score
 win.ontimer(update_score, 500)
